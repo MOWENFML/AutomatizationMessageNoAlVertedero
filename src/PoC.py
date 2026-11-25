@@ -8,7 +8,7 @@ import pywhatkit as pwk
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-CSV_PATH = BASE_DIR / "data" / "contactos_poc.csv"
+CSV_PATH = BASE_DIR / "data" / "datos de prueba.csv"
 LOG_PATH = BASE_DIR / "logs" / "registro_poc.csv"
 
 # Ajustes para tu PoC
@@ -70,7 +70,7 @@ def ejecutar_poc() -> None:
 
         try:
             if DRY_RUN:
-                time.sleep(1)
+                time.sleep(3)
                 estado = "SIMULADO_OK"
                 detalle = "Modo prueba activo; no se abrió WhatsApp Web"
             else:
